@@ -11,7 +11,7 @@ function App() {
         <Suspense fallback={<h2>Loading ... </h2>}>
           <section style={{ display: "flex" }}>
             <HomePage />
-            <div>
+            <div style={{ flexGrow: "1" }}>
               <Routes>
                 <Route path="/" element={<UserLists />} />
                 <Route path="/comments" element={<UserComment />} />

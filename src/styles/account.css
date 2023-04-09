@@ -1,0 +1,109 @@
+.account__page {
+  background: var(--bg-color);
+  width: 100% !important;
+  max-height: 655px;
+  height: 100%;
+}
+.account__header {
+  background: #fff;
+  padding: 3rem 0 2.7rem 3rem;
+}
+.account__body {
+  width: 70%;
+  margin: 2rem auto;
+}
+.user__img {
+  background: #fff;
+  display: flex;
+  padding: 1rem 1.7rem 1rem 2.4rem;
+  border-radius: 1.6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.img__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.img__wrapper img {
+  width: 55px;
+  height: 55px;
+  border: 1px solid var(--bg-color);
+  border-radius: 50%;
+}
+.img__wrapper h4 {
+  font-size: 1.6rem;
+  line-height: 25px;
+  color: var(--black-color);
+  font-weight: 500;
+}
+.upload__btn {
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.upload__btn ion-icon {
+  font-size: 2rem;
+}
+.account__body h4 {
+  margin: 2.5rem 0;
+  font-size: 1.6rem;
+  line-height: 25px;
+  font-weight: 500;
+}
+.account__body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.account__body .account__label {
+  font-size: 1.4rem;
+  line-height: 17px;
+  color: #425466;
+  display: block;
+  margin-bottom: 8px;
+}
+.account__body ul li:first-child {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+.account__body ul li:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex__box {
+  width: 48%;
+}
+.flex__box .account__input {
+  width: 90%;
+}
+.account__input {
+  width: 95.5%;
+  padding: 10.5px 17px;
+  outline: none;
+  box-shadow: -15px 10px 10px rgba(50, 50, 71, 0.08);
+  border: 1px solid #4254666b;
+  border-radius: 6px;
+  font-size: 1.4rem;
+}
+.account__input::placeholder {
+  color: #b5b5bd;
+  font-size: 1.3rem;
+  line-height: 13px;
+}
+.account__btn {
+  padding: 6px 12px;
+  background: rgba(76, 111, 255, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
