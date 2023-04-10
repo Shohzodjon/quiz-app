@@ -34,7 +34,7 @@ const LoginPage = () => {
               <span></span>
             </li>
             <li>
-              <BaseButton context="Register" handleClick={handleChange} />
+              <BaseButton context="Login" handleClick={handleChange} />
             </li>
           </ul>
         </form>

@@ -1,0 +1,36 @@
+.new__comment h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.new__comment__form label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.textarea__wrapp {
+  background: #fff;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(153, 153, 153, 0.5);
+  margin-bottom: 10px;
+}
+.textarea__wrapp textarea {
+  width: 100%;
+  outline: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.textarea__wrapp input {
+  outline: none;
+  width: 96%;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: 1px solid #999;
+}

@@ -1,0 +1,63 @@
+.question__list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.question__list input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.check__question {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.question__list:hover input ~ .check__question {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.question__list input:checked ~ .check__question {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.check__question:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.question__list input:checked ~ .check__question:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.question__list .check__question:after {
+  top: 4.48px;
+  left: 4.5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: white;
+}

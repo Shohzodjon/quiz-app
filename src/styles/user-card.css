@@ -28,6 +28,10 @@
   align-items: center;
   gap: 1rem;
 }
+.card__flex__left img {
+  width: 13px;
+  height: 13px;
+}
 .card__flex__left span {
   color: var(--text-color);
   font-size: 1.2rem;
@@ -40,6 +44,10 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.card__flex__right img {
+  width: 15px;
+  height: 15px;
 }
 .card__flex__right span {
   color: var(--text-color);

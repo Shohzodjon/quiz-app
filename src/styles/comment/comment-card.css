@@ -1,0 +1,27 @@
+.comment__card {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  max-width: 450px;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(153, 153, 153, 0.5);
+}
+.comment__header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.comment__header img {
+  width: 35px;
+  height: 35px;
+}
+.comment__header h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.comment__body {
+  margin-top: 5px;
+}
+.comment__body p {
+  font-size: 1.2rem;
+}

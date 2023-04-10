@@ -19,13 +19,13 @@ const SideBar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className="menu__list">
+              <Link to="/test" className="menu__list">
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <span>Test CRUD</span>
               </Link>
             </li>
             <li>
-              <Link to="/" className="menu__list">
+              <Link to="/comments" className="menu__list">
                 <ion-icon name="people-outline"></ion-icon>
                 <span>Users</span>
               </Link>
