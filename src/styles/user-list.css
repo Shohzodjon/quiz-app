@@ -47,13 +47,13 @@
   overflow-y: auto;
   padding-bottom: 2rem;
 }
-::-webkit-scrollbar {
+.user__list__body::-webkit-scrollbar {
   width: 9px;
 }
-::-webkit-scrollbar-track {
+.user__list__body::-webkit-scrollbar-track {
   background: #fff;
 }
-::-webkit-scrollbar-thumb {
+.user__list__body::-webkit-scrollbar-thumb {
   background: #57f088;
   border-radius: 4px;
 }

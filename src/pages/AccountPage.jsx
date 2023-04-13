@@ -6,7 +6,7 @@ const AccountPage = () => {
         <h2 className="header__title">Create acccount</h2>
       </header>
       <form className="account__body">
-        <div className="user__img">
+        <div className="user__img__wrapp">
           <div className="img__wrapper">
             <img src="" alt="user img" />
             <h4>Jhon Doe</h4>

@@ -6,7 +6,7 @@ const UserLists = () => {
   return (
     <section className="user__list__section">
       <header className="user__list__header">
-        <h2 className="header__title">Dashboard</h2>
+        <h2 className="header__title">Users list</h2>
         <div className="btn__group">
           <Link to="/login">
             <button className=" btn login__btn">Login</button>

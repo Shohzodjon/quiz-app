@@ -19,13 +19,13 @@
   padding-left: 2.5rem;
   padding-top: 1rem;
 }
-::-webkit-scrollbar {
+.comment__page__flex-left::-webkit-scrollbar {
   width: 9px;
 }
-::-webkit-scrollbar-track {
+.comment__page__flex-left::-webkit-scrollbar-track {
   background: #fff;
 }
-::-webkit-scrollbar-thumb {
+.comment__page__flex-left::-webkit-scrollbar-thumb {
   background: #57f088;
   border-radius: 4px;
 }

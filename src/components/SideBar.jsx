@@ -15,7 +15,7 @@ const SideBar = () => {
             <li>
               <Link to="/" className="menu__list">
                 <ion-icon name="home-outline"></ion-icon>
-                <span>Dashboard</span>
+                <span>Users list</span>
               </Link>
             </li>
             <li>
@@ -27,7 +27,7 @@ const SideBar = () => {
             <li>
               <Link to="/comments" className="menu__list">
                 <ion-icon name="people-outline"></ion-icon>
-                <span>Users</span>
+                <span>Users comments</span>
               </Link>
             </li>
           </ul>
