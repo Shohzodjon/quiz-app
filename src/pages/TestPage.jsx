@@ -1,24 +1,14 @@
 import QuestionList from "../components/QuestionList";
+import "../styles/test-page.css";
 import clock from "../images/clock.svg";
 import flag from "../images/flag.svg";
+import taskList from "../helpers/question-list";
+import { useState, useEffect } from "react";
 const TestPage = () => {
-  const arr = [
-    {
-      text: "SSSSS",
-      id: 1,
-    },
-    {
-      text: "wewerwer",
-      id: 2,
-    },
-    {
-      text: "totmtmt",
-      id: 3,
-    },
-  ];
-  const testClick = (e) => {
-    alert(`${e}`);
-  };
+  const [list, setList] = useState([]);
+  useEffect(() => {
+    setList(taskList);
+  }, []);
   return (
     <section className="test__page">
       <header className="test__page__header">
@@ -34,14 +24,14 @@ const TestPage = () => {
       </header>
 
       <main>
-        <h4>Najot Ta’lim’ga qachon va qayerda, kim tomonidan asos solingan?</h4>
-        {arr.map((item) => (
-          <QuestionList
-            key={item.id}
-            clickFunc={() => testClick(item.text)}
-            answers={item.text}
-          />
-        ))}
+        <div style={{ border: "1px solid red" }}>
+          <QuestionList data={list[0]} />
+
+          <div className="test__page__btn">
+            <button className="btn ">Previous</button>
+            <button className="btn active__btn">Next</button>
+          </div>
+        </div>
       </main>
     </section>
   );
