@@ -5,10 +5,28 @@ import flag from "../images/flag.svg";
 import taskList from "../helpers/question-list";
 import { useState, useEffect } from "react";
 const TestPage = () => {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(taskList);
+  const [counter, setCounter] = useState(0);
+
   useEffect(() => {
     setList(taskList);
   }, []);
+
+  const nextQue = () => {
+    if (counter < list.length - 1) {
+      setCounter((counter) => counter + 1);
+    } else {
+      setCounter(list.length - 1);
+    }
+  };
+  const prevQue = () => {
+    if (counter == 0) {
+      setCounter(0);
+    } else {
+      setCounter((counter) => counter - 1);
+    }
+  };
+
   return (
     <section className="test__page">
       <header className="test__page__header">
@@ -24,12 +42,18 @@ const TestPage = () => {
       </header>
 
       <main>
-        <div style={{ border: "1px solid red" }}>
-          <QuestionList data={list[0]} />
-
+        <div className="question__list__wrapper">
+          <QuestionList data={list[counter]} />
           <div className="test__page__btn">
-            <button className="btn ">Previous</button>
-            <button className="btn active__btn">Next</button>
+            <button
+              className={counter > 0 ? "btn active__btn" : "btn"}
+              onClick={prevQue}
+            >
+              Previous
+            </button>
+            <button className="btn active__btn" onClick={nextQue}>
+              Next
+            </button>
           </div>
         </div>
       </main>

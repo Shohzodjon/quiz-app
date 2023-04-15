@@ -41,27 +41,33 @@
 .test__page main {
   padding-left: 2rem;
   padding-right: 4rem;
+}
+.question__list__wrapper {
   background: #fff;
+  border-radius: 6px;
 }
 .test__page__btn {
   margin-top: 2rem;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+  border-top: 1px solid rgba(235, 242, 250, 1);
+  padding: 12px;
 }
 .btn {
   background: rgba(235, 242, 250, 1);
-  padding: 9px 16px;
+  padding: 8px 14px;
   border-radius: 8px;
   border: 1px solid transparent;
   color: rgba(166, 183, 212, 1);
-  font-size: 1.4rem;
-  width: 90px;
+  font-size: 1.3rem;
+  width: 80px;
   font-weight: 600;
   transition: all linear 0.4s;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 .active__btn {
   background: rgba(76, 111, 255, 1);
   color: #fff;
+  cursor: pointer;
 }
